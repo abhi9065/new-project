@@ -1,0 +1,288 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> NOTPAD </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="INTRO">
+
+    <div class="under" >
+
+    <div class="input">
+      
+      <input class="input2" type="text" placeholder="             Add a New Task + Enter ">
+    </div> 
+
+
+ 
+      <div class="ABHI">
+        <span class="active" id="all">All</span>
+        <span id="pending">Pending</span>
+        <span id="completed">Completed</span>
+        <button class="clear-btn">Clear All</button>
+      </div>
+
+
+     
+    </div>
+</div>
+   
+  </div>
+
+  <script>
+    
+    
+
+    /* let p1 = new Promise(function(resolve,reject){
+      setTimeout(() => {
+        console.log("the first promised has resolved")
+        resolve(10)
+      }, 1000);
+    })
+  
+    let p2 = new Promise(function(resolve,reject){
+      setTimeout(() => {
+        console.log("the first promised has resolved")
+        resolve(20)
+      }, 2000);
+    })
+
+  
+    let p3 = new Promise(function(resolve,reject){
+      setTimeout(() => {
+        console.log("the first promised has resolved")
+        resolve(30)
+      }, 3000);
+    })
+
+
+
+    var total = 0;
+     
+    Promise.all([p1,p2,p3]).then(function(result){
+      
+       for(var i in result){
+        total += result[i]
+        }
+
+      console.log(`result: ${result}`)
+      console.log(`total: ${total}`)
+    }).catch(function(error){
+      console.log(`error ${
+        error}`)
+    })
+  
+      
+     fetch("https://jsonplaceholder.typicode.com/users")
+  
+     .then(response => response.json())
+     .then((data) => {  
+      console.log(data)
+
+         for(var x in data){
+          document.write(`${data[x].name}  - ${data[x].phone} <br>`)
+         }
+     })
+     .catch(error => document.write("custom fetch data"))  */
+
+
+      /*async function text (){
+        console.log("2 : message")
+        await console.log("3 : message")
+        console.log("4 : message")
+      }
+
+      console.log("1 : message")
+      text()
+
+      console.log("5 : message")*/
+
+
+
+      //rest operator//
+
+     
+       function sum(name,...args){
+        //console.log()
+
+        document.write(`${name}  : `)
+        
+
+        let sum = 0 
+        for( let i in args){
+          sum += args[i]
+        }
+   
+      document.write(sum + "<br>")
+      } 
+  
+
+
+       sum("yahoo baba", 10,20,30)
+       
+
+       //rest operator//
+
+
+
+       //spread operator//
+
+        let arr1 = [10,20,30,40]
+        
+        let arr2 = [50,60]
+        
+        let arr3 = [...arr1,...arr2]
+
+        
+        console.log(arr3)
+
+
+
+         //spread operator//
+
+
+
+         //object literal//
+
+
+               //exmaple = 1 //
+                
+               let name = "yahoo baba"
+               let course = "Btech"
+
+
+               let obj1 ={
+
+                name,
+                course
+               }
+
+               console.log(obj1)
+
+              //exmaple = 1 //
+
+             //example = 2 //
+
+         let n = "student";
+
+         let obj2 ={
+
+          [n + "name"] : "yahoo baba",
+          course : "Btech",
+           detail (){
+
+            return `${this.studentname} in student of ${this.course}`
+           } 
+         }
+
+
+         console.log(obj2)
+         console.log(obj2.detail())
+
+
+             //example = 2 //
+
+
+             //example = 3 //
+
+             let fname = "yahoo";
+             let lname = "baba"
+             let courses = "Btech"
+
+             function student(named,coursed){
+
+              let fullname = fname +  " " + lname
+              return {fullname,coursed}
+             }
+             
+
+             let s = student(fname,lname,courses)
+             console.log(s)
+
+             //example = 3 //
+
+
+           //object literal//
+
+        
+
+
+           //oop// 
+           
+           class hello{
+
+            message(){
+              console.log("hello evsdsfsfcseryone")
+            }
+           }
+           
+           let a = new hello()
+
+           a.message()
+
+
+
+           class stu{
+
+            constructor(name,age){
+                this.studentname = name
+                this.studentage = age
+              console.log("abhishek jain")
+            }
+
+            hello(){
+              console.log("hello " + this.studentname + " your age is " + this.studentage);
+            }
+           }
+
+           let b = new stu("yahoo baba",22)
+
+          // b.name = "yahoo baba"
+
+            b.hello()
+           
+
+           
+           //oop//
+
+
+
+
+
+           //class inheritance//
+           
+           
+             class employee{
+              constructor(name){
+                console.log("hello " + name)
+              }
+             }
+
+             class manager extends employee{
+              constructor(){
+                super()
+                console.log(name)
+              }
+             }
+
+
+             let c = new manager("yahoo baba")
+           
+           
+           //class inheritance//
+
+
+  </script>
+
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>
